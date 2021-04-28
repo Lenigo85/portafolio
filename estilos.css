@@ -251,6 +251,10 @@ img{
   margin-bottom: var(--espacios-contenido);
 }
 
+.skills{
+  background: #e6e6e6;
+}
+
 .habilidades{
   display: flex;
   color: white;
