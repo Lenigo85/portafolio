@@ -10,15 +10,13 @@ $(function(){
         }
     });
 
-    let equipo = $('#equipo').offset().top,
-        servicio = $('#servicio').offset().top,
-        trabajo = $('#trabajo').offset().top,
+    let portfolio = $('#portfolio').offset().top,
+        habilidad = $('#habilidad').offset().top,
         contacto = $('#contacto').offset().top;
 
     window.addEventListener('resize', function(){
-        let equipo = $('#equipo').offset().top,
-        servicio = $('#servicio').offset().top,
-        trabajo = $('#trabajo').offset().top,
+        let portfolio = $('#portfolio').offset().top,
+        habilidad = $('#habilidad').offset().top,
         contacto = $('#contacto').offset().top;
     });
 
@@ -29,24 +27,17 @@ $(function(){
         },600);
     });
 
-    $('#enlace-equipo').on('click', function(e){
+    $('#enlace-portfolio').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: equipo -100
+            scrollTop: portfolio -100
         },600);
     });
 
-    $('#enlace-servicio').on('click', function(e){
+    $('#enlace-habilidad').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: servicio -100
-        },600);
-    });
-
-    $('#enlace-trabajo').on('click', function(e){
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: trabajo -100
+            scrollTop: habilidad -100
         },600);
     });
 
